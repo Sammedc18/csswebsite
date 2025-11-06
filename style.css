@@ -1,0 +1,645 @@
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #F5F5F5;
+    
+}
+
+/* Navbar */
+.navbar {
+    
+   
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+    background: #F5F5F5;
+    /* box-shadow: 0 2px 5px rgba(0,0,0,0.05); */
+    height: 80px;
+}
+
+.logo
+{
+    height: 40px;
+    margin-left: 70px;
+}
+
+.navbar-left {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.navbar-left img {
+    width: 30px;
+    height: 30px;
+}
+
+.navbar-left h1 {
+    font-size: 18px;
+    font-weight: 600;
+    margin: 0;
+    color: #000;
+}
+
+.navbar-right {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    margin-right: 100px;
+}
+
+.navbar-right a {
+    text-decoration: none;
+    color: #333;
+    font-size: 15px;
+    transition: color 0.3s ease;
+}
+
+.navbar-right a:hover {
+    color: #b87333;
+}
+
+.navbar-right .phone {
+    font-weight: 600;
+    color: #333;
+}
+
+
+
+
+
+
+/*----------------------------------------------hero1 Section ---------------------------------*/
+
+.container {
+    /* border: solid 2px black; */
+    width: 1260px;
+    height: 2000px;
+    margin-left: 120px;
+    margin-top: 30px;
+    background-color: white;
+}
+
+.img_box {
+    width: 100%;
+    height: 400px; 
+    overflow: hidden; 
+}
+
+.hero_img {
+    width: 100%;        
+    height: 100%;      
+    object-fit: cover; 
+    height: 700px;
+}
+.hero
+{
+    width: 100%;
+    height: 600px;
+    /* border: solid 2px black ; */
+
+}
+
+
+/*----------------------------------------------hero1 Section end------------------------------------------------*/
+
+
+
+/*----------------------------------------------hero2 Section ---------------------------------*/
+
+
+.hero1 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 100vh;
+  margin-top: 50px;
+}
+
+/* LEFT SIDE IMAGE */
+.hero1_img {
+  width: 50%;
+  height: 600px;
+  overflow: hidden;
+  margin-top: 100px;
+}
+
+.hero1_img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* RIGHT SIDE TEXT */
+.hero1_text {
+  width: 50%;
+  padding: 0 6rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.hero1_text h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  line-height: 1.3;
+  margin-bottom: 1.5rem;
+}
+
+.hero1_text p {
+  color: #555;
+  font-size: 1rem;
+  line-height: 1.8;
+  margin-bottom: 2rem;
+}
+
+.hero1_text button {
+  background-color: #000;
+  color: #fff;
+  border: none;
+  padding: 0.9rem 2.2rem;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.hero1_text button:hover {
+  background-color: #333;
+}
+
+.more
+{
+  text-decoration: none;
+  color: white; 
+}
+
+/*----------------------------------------------hero2 Section end------------------------------------------------*/
+
+
+/* -------------------- why Choose us section--------------  */
+
+.whychooseus {
+ width: 100%;
+ /* border: solid 2px black    ; */
+ height: 400px;
+  
+} 
+
+.why{
+    
+   
+     padding: 10px 5%; 
+    text-align: center;
+    font-size: 2rem;
+   
+}
+ span
+ {
+     color: #A26028;
+ }
+.feature-container
+{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 60px;
+
+}
+
+.feature-item
+{
+    /* border: solid 1px black; */
+    width: 20%;
+    height: 300px;
+}
+.feature-title{
+    color: #A26028;
+    text-align: center;
+}
+p{
+    text-align: center;
+    padding-top: 40px;
+}
+
+
+
+/* -------------------- why Choose us section End--------------  */
+
+
+/* --------------------our services----------------- */
+
+
+.ourservices {
+  /* border: solid 2px black; */
+  height: 1000px;
+  background-color: #EFEFEF;
+}
+
+.heading {
+  text-align: center;
+  font-size: 2rem;
+  padding-top: 80px;
+}
+
+.services-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.service {
+  /* border: solid 2px black; */
+  margin-top: 70px;
+  height: 600px;
+  width: 30%;
+  position: relative;
+  overflow: hidden;
+}
+
+.service img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+
+.overlay-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-align: center;
+  /* background: rgba(0, 0, 0, 0.4);*/
+  padding: 10px 20px;
+  border-radius: 10px;
+  opacity: 0;
+  transition: opacity 0.4s ease;
+}
+
+/* Hover effects */
+.service:hover .overlay-text {
+  opacity: 1;
+}
+
+.service:hover img {
+  transform: scale(1.03);
+  transition: transform 0.3s ease;
+}
+.btn-container {
+  text-align: center; 
+  margin-top: 100px;
+}
+
+.service-btn {
+  background-color: #111; 
+  color: #d2cece;           
+  border: none;           
+  padding: 10px 30px;     
+  font-size: 0.8rem;
+  cursor: pointer;
+  transition: all 0.3s ease; 
+}
+
+.service-btn:hover {
+  background-color: #333; }
+
+
+    /* ---------------------Satisfied Customers---------------- */
+
+  .testimonials {
+    width: 100%;
+    height: 600px;
+    /* border: solid 2px black; */
+    margin-top: 50px;
+    background-color: #EFEFEF;
+    
+  } 
+
+  h1
+  {
+    text-align: center;
+    padding-top: 100px;
+  }
+  .testimonial
+  {
+    width: 300px;
+
+  }
+  .customers
+  {
+    display: flex;
+    justify-content: space-between;
+    padding: 50px 80px;
+    gap: 20px;
+  }
+  
+
+.name
+{
+  text-align: center;
+  padding-top: 50px;
+  color: #A26028;
+  font-weight: bold;
+  font-size: larger;
+ 
+}
+
+.contactus-main
+{
+  width: 100%;
+  height: 600px;
+  background-color:#1E1E1E;
+  margin-top: 1400px;
+  border: solid 2px black;
+}
+.contact
+{
+  width: 1260px;
+    height: 600px;
+    margin-left: 120px;
+    /* border: solid 2px white; */
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.discuss
+{
+  width: 100%;
+  height: 300px;
+  /* border: solid 2px red; */
+}
+
+/* --------------------form----------------- */
+
+
+.contact-form {
+  width: 100%;
+  height: 500px;
+  max-width: 400px; /* Optional: keeps it from stretching too wide on large screens */
+  padding: 20px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.row {
+  display: flex;
+  gap: 20px;
+}
+
+.input-group {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  font-size: 0.9rem;
+  margin-bottom: 5px;
+  color: #cfcfcf;
+}
+
+input, textarea {
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid #888;
+  padding: 8px 0;
+  color: #fff;
+  font-size: 0.95rem;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+input:focus, textarea:focus {
+  border-color: #fff;
+}
+
+.phone-field {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #888;
+}
+
+.phone-field .globe {
+  margin-right: 8px;
+  font-size: 1rem;
+}
+
+.phone-field input {
+  border: none;
+  flex: 1;
+  background: transparent;
+  color: #fff;
+  padding: 8px 0;
+  outline: none;
+}
+
+button {
+  background: #fff;
+  color: #333;
+  border: none;
+  padding: 12px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+button:hover {
+  background: #ddd;
+}
+
+.lets{
+  color: white;
+  text-align: left;
+  margin-top: -80px;
+  font-size: 2.5rem;
+  
+}
+p
+{
+  color: #AAA7AA;
+  text-align: left;
+  margin-top: -30px;
+}
+
+
+.about-text
+{
+  font-size: 2.5rem;
+  font-weight: 700;
+  text-align: center;
+  margin-top: 90px;
+  color: black;
+  font-weight: bold;
+}
+
+.about-para
+{
+  text-align: center;
+  /* padding-left: 400px;
+  padding-right: 400px; */
+  color: #505050;
+  line-height: 1.8;
+}
+
+.aboutimg
+{
+  width: 100%;
+  height: 500px;
+  margin-top: 30px;
+  /* border: solid 2px black; */
+}
+
+.ourprocess
+{
+text-align: center;
+font-size: 2.5rem;
+}
+
+.ourprocess-para
+{
+  text-align: center;
+  color: #505050;
+  line-height: 1.8;
+}
+
+.process
+{
+  width: 100%;
+  height: auto;
+  /* border: solid 2px black; */
+  margin-top: 150px;
+  display: flex;
+    
+}
+.processimg
+{
+  /* border: solid 2px red; */
+  width: 25%;
+  height: 400px;
+}
+.processtxt
+{
+  /* border: solid 2px green; */
+  width: 25%;
+  height: 400px;
+  background-color: #DBDBDB;
+}
+
+.processimg img
+{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.process1
+{
+   width: 100%;
+  height: auto;
+  display: flex;
+ 
+}
+.txt{
+  text-align: center;
+  padding-top: 60px;
+  font-size: 1.3rem; 
+  
+}
+
+.processpara{
+  text-align: center;
+  color: #505050;
+  line-height: 1.8;
+}
+
+.guarantee
+{
+  width: 100%;
+  height: auto;
+  
+  
+}
+.guaranteetext
+{
+  text-align: center;
+  font-size: 2.5rem;
+  margin-top: 20px;
+}
+.guaranteepara
+{
+  text-align: center;
+  color: #505050;
+  line-height: 1.8;
+  margin-top: 10px;
+  padding-bottom: 30px;
+} 
+
+.Estimate
+{
+  width: 100%;
+  height: 300px;
+  background-color: #000000;
+  margin-top: 50px;
+  text-align: center;
+}
+.estimateheading
+{
+  text-align: center;
+  font-size: 2.1rem;
+  color: white;
+  padding-top: 50px;
+}
+.estimatebtn
+{
+  text-align: center;
+  margin-top: 30px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  /* margin-left: 50%; */
+  font-size: 1rem;
+  font-style: oblique;
+}
+
+
+/* --- Responsive patch added by assistant --- */
+* { box-sizing: border-box; }
+
+/* Make media scale and images responsive */
+img, picture, video, svg { max-width: 100%; height: auto; display: block; }
+
+/* Simple responsive grid helpers */
+.container { width: 100%; padding-left: 1rem; padding-right: 1rem; margin-left: auto; margin-right: auto; }
+.row { display: flex; flex-wrap: wrap; gap: 1rem; }
+.col { flex: 1 1 0; min-width: 220px; }
+
+/* Navigation and utilities */
+.nav, .navbar, nav { display: flex; flex-wrap: wrap; gap: .5rem; align-items: center; }
+
+/* Typography scaling */
+html { font-size: 100%; }
+@media (max-width: 1024px) {
+  html { font-size: 95%; }
+}
+@media (max-width: 768px) {
+  html { font-size: 92%; }
+  .row { flex-direction: column; }
+  .col { min-width: 100%; }
+  .nav, .navbar, nav { flex-direction: column; align-items: flex-start; }
+}
+/* Small phones */
+@media (max-width: 480px) {
+  html { font-size: 90%; }
+  body { padding-left: .5rem; padding-right: .5rem; }
+}
+/* End of patch */
